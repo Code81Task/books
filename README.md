@@ -80,13 +80,25 @@ Explore and test the APIs using Swagger UI at:
 - **Services**: Business logic for managing books, authors, etc.
 - **Repositories**: Spring Data JPA repositories for database operations
 
-## API Endpoints
-Access the Swagger UI (`http://localhost:8080/swagger-ui/index.html#/`) for a complete list of endpoints and their details. Example endpoints include:
-- `GET /api/books`: Retrieve all books
-- `POST /api/books`: Create a new book
-- `GET /api/books/{id}`: Get a book by ID
-- `PUT /api/books/{id}`: Update a book
-- `DELETE /api/books/{id}`: Delete a book
+### Book Controller
+- **GET /api/v1/books/{id}**: Retrieve a book by ID.
+- **PUT /api/v1/books/{id}**: Update a book by ID.
+- **DELETE /api/v1/books/{id}**: Delete a book by ID.
+- **GET /api/v1/books**: Retrieve all books.
+- **POST /api/v1/books**: Create a new book.
+- **GET /api/v1/books/category/{categoryId}**: Retrieve books by category ID.
+
+### Publisher Controller
+- **GET /api/v1/publishers**: Retrieve all publishers.
+- **POST /api/v1/publishers**: Create a new publisher.
+
+### Category Controller
+- **GET /api/v1/categories**: Retrieve all categories.
+- **POST /api/v1/categories**: Create a new category.
+
+### Category Controller
+- **GET /api/v1/authors**: Retrieve all authors.
+- **POST /api/v1/authors**: Create a new author.
 
 ## Database Migrations
 Flyway is used for database migrations. Migration scripts are located in `src/main/resources/db/migration`. On startup, Flyway applies migrations to the `libraryManagementSystem` schema.

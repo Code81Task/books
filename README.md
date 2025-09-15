@@ -2,6 +2,8 @@
 
 ## Overview
 The **Library Management System** is a Spring Boot application designed to manage books, authors, publishers, and categories in a library. It provides RESTful APIs to perform CRUD operations on books, leveraging Spring Data JPA for database interactions, MapStruct for object mapping, Flyway for database migrations, and Swagger for API documentation. The application uses MySQL as the database and includes features like book details management, author associations, and category assignments.
+<img width="836" height="386" alt="Screenshot 2025-09-15 at 5 16 16 PM" src="https://github.com/user-attachments/assets/a6651654-dd14-44e7-b07b-00a3fe5c045f" />
+
 
 ## Technologies Used
 - **Java**: 23
